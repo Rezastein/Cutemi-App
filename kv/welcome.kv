@@ -1,0 +1,35 @@
+<Welcome>:
+    MDFloatLayout:
+        md_bg_color:1, 1, 1, 1
+    Image:
+        source:"assets/images/bg.png"
+        size_hint: .6, .6
+        pos_hint: {'center_x': 0.5,'center_y': 0.65}
+    MDLabel:
+        text: "Cutemi Tools"
+        halign: "center"
+        font_size: "25sp"
+        font_name: "tech"
+        pos_hint: {'center_y': 0.4}
+    MDLabel:
+        text: "tools sederhana untuk mempermudah pekerjaan"
+        font_name: "tech"
+        halign: "center"
+        font_size: "12sp"
+        pos_hint: {'center_y': 0.35}
+    MDFillRoundFlatButton:
+        text: "LOGIN"
+        font_name: "tech"
+        size_hint: .3, .055
+        pos_hint: {'center_x': 0.5,'center_y': 0.25}
+        on_release:
+            root.manager.transition.direction = "left"
+            root.manager.current = "login"
+    MDFillRoundFlatButton:
+        text: "SIGN UP"
+        font_name: "tech"
+        size_hint: .3, .055
+        pos_hint: {'center_x': 0.5,'center_y': 0.18}
+        on_release:
+            root.manager.transition.direction = "left"
+            root.manager.current = "signup" 
